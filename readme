@@ -1,0 +1,85 @@
+# Team 1 Portfolio Website
+
+## Project Overview
+
+This project is a collaborative portfolio website created by Team 1.  
+The website introduces each team member, highlights their technical skills,
+career interests, and provides access to their personal portfolio pages.
+
+The project was developed using:
+
+- HTML
+- CSS
+- GitHub
+- Netlify
+
+---
+
+# Features
+
+- Responsive navigation bar
+- Animated gradient background
+- Homepage with team overview
+- Individual portfolio pages
+- Shared CSS styling
+- Portfolio links
+- GitHub collaboration
+- Netlify deployment
+
+---
+
+# Team Members and Contributions
+
+## Geyson Mejia Castro
+- Organized the GitHub repository and project structure
+- Worked on navigation bar functionality
+- Assisted with deployment using Netlify
+- Contributed to overall styling and UI improvements
+
+---
+
+## Abigail
+- Created and customized personal portfolio page
+- Helped improve page styling and formatting
+- Contributed ideas for website layout and presentation
+- Assisted with testing navigation links
+
+---
+
+## Baffour
+- Developed personal portfolio content and structure
+- Helped review and organize HTML layout
+- Assisted with debugging and improving consistency across pages
+- Helped design the homepage layout
+
+---
+
+## Kevin
+- Created and customized individual profile page
+- Assisted with testing responsiveness and navigation
+- Contributed ideas for improving user experience and design
+
+---
+
+## Oumar
+- Developed personal portfolio page and content
+- Assisted with testing and reviewing the website
+- Contributed to overall team collaboration and project completion
+
+---
+
+# File Structure
+
+```plaintext
+project-folder/
+│
+├── index.html
+├── style.css
+├── pages.css
+├── logo.jpeg
+│
+├── Abigail.html
+├── Baffour.html
+├── Geyson.html
+├── Kevin.html
+└── Oumar.html
