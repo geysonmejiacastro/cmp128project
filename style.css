@@ -4,19 +4,52 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
     color: #222;
+
+    background: linear-gradient(
+        -45deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb,
+        #0ea5e9
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientBG 12s ease infinite;
 }
 
+/* ANIMATED BACKGROUND */
+
+@keyframes gradientBG {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* HEADER */
 
 header {
-    background-color: #1e3a8a;
+    background-color: rgba(15, 23, 42, 0.85);
     padding: 20px 40px;
+
+    backdrop-filter: blur(8px);
 }
 
+/* NAVIGATION */
 
 nav {
     width: 100%;
@@ -25,6 +58,7 @@ nav {
     align-items: center;
 }
 
+/* LOGO */
 
 .logo {
     color: white;
@@ -32,6 +66,7 @@ nav {
     font-weight: bold;
 }
 
+/* NAV LINKS */
 
 nav a {
     color: white;
@@ -46,6 +81,7 @@ nav a:hover {
     color: #93c5fd;
 }
 
+/* CENTER NAV LINKS */
 
 nav a:first-of-type {
     margin-left: auto;
@@ -55,58 +91,130 @@ nav a:last-of-type {
     margin-right: auto;
 }
 
+/* HERO SECTION */
 
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-h1 {
+.hero {
     text-align: center;
-    margin-bottom: 25px;
-    color: #1e3a8a;
+    padding: 80px 20px;
 }
 
-h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #2563eb;
+/* HERO LOGO */
+
+.hero-logo {
+    width: 220px;
+    margin-bottom: 30px;
+
+    filter: drop-shadow(0px 0px 20px rgba(255,255,255,0.2));
 }
 
+/* HERO TITLE */
 
-ul {
-    margin-left: 25px;
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: white;
 }
 
-li {
-    margin-bottom: 5px;
+/* HERO PARAGRAPH */
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 20px;
+    line-height: 1.8;
+
+    color: white;
 }
 
+/* BUTTONS */
 
-p {
-    margin-top: 10px;
-    line-height: 1.7;
-    font-size: 17px;
+.hero-buttons {
+    margin-top: 40px;
 }
 
-
-a.button {
+.button {
     display: inline-block;
-    margin-top: 20px;
+
+    margin: 10px;
+    padding: 14px 24px;
+
     background-color: #2563eb;
     color: white;
-    padding: 10px 18px;
-    border-radius: 5px;
+
+    border-radius: 6px;
+
     text-decoration: none;
+
     transition: 0.3s;
 }
 
-a.button:hover {
+.button:hover {
     background-color: #1e40af;
+    transform: scale(1.05);
 }
 
+/* TEAM SECTION */
+
+.team-preview {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* TEAM TITLE */
+
+.team-preview h2 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+/* CARDS CONTAINER */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+/* MEMBER CARD */
+
+.card {
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    width: 240px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+
+    background: rgba(255,255,255,0.2);
+}
+
+/* CARD TITLES */
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* CARD TEXT */
+
+.card p {
+    line-height: 1.6;
+}
