@@ -24,12 +24,26 @@ body {
 
 /* ANIMATED BACKGROUND */
 
+@keyframes gradientBG {
 
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /* HEADER */
 
 header {
     background-color: rgba(15, 23, 42, 0.85);
+
     padding: 20px 40px;
 
     backdrop-filter: blur(8px);
@@ -44,7 +58,7 @@ nav {
     align-items: center;
 }
 
-/* LOGO IMAGE */
+/* LOGO */
 
 .logo img {
     width: 65px;
@@ -59,6 +73,7 @@ nav {
 
 nav a {
     color: white;
+
     text-decoration: none;
 
     font-size: 18px;
@@ -101,12 +116,31 @@ nav a:last-of-type {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* PROFILE IMAGE */
+
+.profile-pic {
+    display: block;
+
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin: 0 auto 25px auto;
+
+    border: 4px solid white;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
 /* TITLES */
 
 h1 {
     text-align: center;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     color: white;
 
@@ -129,6 +163,7 @@ ul {
 
 li {
     margin-bottom: 8px;
+
     font-size: 18px;
 }
 
